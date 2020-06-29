@@ -49,9 +49,24 @@
 
 ![INNER JOIN](https://imgur.com/yh8F7Qf.png)
 
-SELECT City, colYear, colMonth, 
-AVG(ArrDelay) AS "prom_arribades"
-FROM flights
-INNER JOIN usairports
-ON flights ID = IATA
-GROUP BY City, colYear, colMonth; 
+    SELECT City, colYear, colMonth, 
+    AVG(ArrDelay) AS "prom_arribades"
+    FROM flights
+    INNER JOIN usairports
+    ON flights ID = IATA
+    GROUP BY City, colYear, colMonth; 
+
+
+    SELECT title, domestic_sales, international_sales FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id WHERE international_sales > domestic_sales;
+
+* _Les companyies amb més vols cancelats, per mesos i any. A més, han d’estar ordenades de forma que les companyies amb més cancel·lacions apareguin les primeres_*
+
+![sum](https://imgur.com/WACdPCE.png)
+
+    SELECT UniqueCarrier, colYear, colMonth
+    SUM(Cancelled) AS "total_cancelacions"
+    FROM flights 
+    GROUP BY UniqueCarrier, colYear, colMonth
+    ORDER BY "total_cancelacions" DESC;
+
+Problemes amb el resultat de la columna Cancelled ja que tots son NULL
