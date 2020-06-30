@@ -70,3 +70,11 @@
     ORDER BY "total_cancelacions" DESC;
 
 Problemes amb el resultat de la columna Cancelled ja que tots son NULL
+
+![coalesce(sum(cancelled))](https://imgur.com/Qnz50au.png)
+
+    SELECT UniqueCarrier, colYear, colMonth, COALESCE (sum(cancelled), 0) AS total_cancelled FROM flights GROUP BY UniqueCarrier, colYear, colMonth HAVING total_cancelled > 0 ORDER BY total_cancelled DESC;
+
+###### Consideracions
+
+la importancia de l'ordre en la pujada de les dades **( f, a, c)**_upsidedown_ i, en aquest cas, repasar una i un altre vegada la qualitat de les dades
