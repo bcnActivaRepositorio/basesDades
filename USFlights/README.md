@@ -109,6 +109,16 @@ La importancia de l'ordre en la pujada de les dades **( f, a, c)**_upsidedown_ i
 
 Finalment l'última query!
 
+### Conclusions
+
+Suposso que estem fent queries molt bàsiques, peró son dures de pelar. Entenc la mecànica darrera de les mateixes 
+
+(gairabé les mateixes que a la programació), peró la manca de coneixament de la sintaxi penalitza. Especialment 
+
+penatlizat en temps per la búsqueda d'una solució a la query "del NULL" quan pujant novament les dades es solucionava 
+
+el problema (gracies Ismael!). Interesant exercici que m'agradarà fer més endavant.
+
 
 ### Documentació
 
