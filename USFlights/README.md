@@ -16,9 +16,9 @@
 
 ![NoGroup](https://imgur.com/Nro1UV1.png)
 
-    SELECT Origin AS "Origen", 
-    AVG(ArrDelay) AS "prom_arribades", 
-    AVG(DepDelay) AS "prom_sortides" 
+    SELECT Origin AS Origen, 
+    AVG(ArrDelay) AS prom_arribades, 
+    AVG(DepDelay) AS prom_sortides 
     FROM flights;
 
 **Group**
@@ -28,9 +28,9 @@
 ![Group](https://imgur.com/OiGMcAJ.png)
            
 
-    SELECT Origin AS "Origen", 
-    AVG(ArrDelay) AS "prom_arribades", 
-    AVG(DepDelay) AS "prom_sortides" 
+    SELECT Origin AS Origen, 
+    AVG(ArrDelay) AS prom_arribades, 
+    AVG(DepDelay) AS prom_sortides 
     FROM flights 
     GROUP BY Origin;
 
@@ -38,10 +38,10 @@
 
 ![Group by Origin, year and month](https://imgur.com/zKCYncK.png)
 
-    SELECT Origin AS "Origen",
+    SELECT Origin AS Origen,
     colYear, colMonth,
-    AVG(ArrDelay) AS "prom_arribades",
-    AVG(DepDelay) AS "prom_sortides"
+    AVG(ArrDelay) AS prom_arribades,
+    AVG(DepDelay) AS prom_sortides
     FROM flights
     GROUP BY Origin, colYear, colMonth;
 
@@ -50,7 +50,7 @@
 ![INNER JOIN](https://imgur.com/yh8F7Qf.png)
 
     SELECT City, colYear, colMonth, 
-    AVG(ArrDelay) AS "prom_arribades"
+    AVG(ArrDelay) AS prom_arribades
     FROM flights
     INNER JOIN usairports
     ON flights ID = IATA
@@ -64,10 +64,10 @@
 ![sum](https://imgur.com/WACdPCE.png)
 
     SELECT UniqueCarrier, colYear, colMonth
-    SUM(Cancelled) AS "total_cancelacions"
+    SUM(Cancelled) AS total_cancelacions
     FROM flights 
     GROUP BY UniqueCarrier, colYear, colMonth
-    ORDER BY "total_cancelacions" DESC;
+    ORDER BY total_cancelacions DESC;
 
 Problemes amb el resultat de la columna Cancelled ja que tots son NULL
 
