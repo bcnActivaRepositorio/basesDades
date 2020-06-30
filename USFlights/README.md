@@ -118,7 +118,7 @@ Finalment l'última query!
 
 [select2](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
 
-[Tens les dades bé?](https://www.linkedin.com/in/ismael-kale-programador-php-angular-ab155372/?originalSubdomain=es)
+Tens les dades bé? Gracies a [Ismael Kale](https://www.linkedin.com/in/ismael-kale-programador-php-angular-ab155372/?originalSubdomain=es)
 
 [check if NULL](https://www.w3schools.com/sql/sql_null_values.asp)
 
