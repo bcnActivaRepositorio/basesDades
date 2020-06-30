@@ -112,19 +112,19 @@ Finalment l'última query!
 
 ### Documentació
 
- ![basics](https://sqlbolt.com/lesson/select_queries_introduction)
+[basics](https://sqlbolt.com/lesson/select_queries_introduction)
 
- ![select](https://www.youtube.com/watch?v=YufocuHbYZo)
+[select](https://www.youtube.com/watch?v=YufocuHbYZo)
 
- ![select2](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
+[select2](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
 
- ![Tens les dades bé?](https://www.linkedin.com/in/ismael-kale-programador-php-angular-ab155372/?originalSubdomain=es)
+[Tens les dades bé?](https://www.linkedin.com/in/ismael-kale-programador-php-angular-ab155372/?originalSubdomain=es)
 
- ![check if NULL](https://www.w3schools.com/sql/sql_null_values.asp)
+[check if NULL](https://www.w3schools.com/sql/sql_null_values.asp)
 
- ![having](https://www.dofactory.com/sql/having) 
+[having](https://www.dofactory.com/sql/having) 
 
- ![differences where and having](https://www.sqltutorial.org/sql-having/)
+[differences where and having](https://www.sqltutorial.org/sql-having/)
 
 
 
