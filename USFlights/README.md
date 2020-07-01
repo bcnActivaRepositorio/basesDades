@@ -53,11 +53,15 @@
     AVG(ArrDelay) AS prom_arribades
     FROM flights
     INNER JOIN usairports
-    ON flights ID = IATA
+    ON flightID = IATA
     GROUP BY City, colYear, colMonth; 
 
 
+* _Correcció_
+
     SELECT title, domestic_sales, international_sales FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id WHERE international_sales > domestic_sales;
+
+
 
 * _Les companyies amb més vols cancelats, per mesos i any. A més, han d’estar ordenades de forma que les companyies amb més cancel·lacions apareguin les primeres_*
 
@@ -118,6 +122,17 @@ Suposso que estem fent queries molt bàsiques, peró son dures de pelar. Entenc 
 penatlizat en temps per la búsqueda d'una solució a la query "del NULL" quan pujant novament les dades es solucionava 
 
 el problema (gracies Ismael!). Interesant exercici que m'agradarà fer més endavant.
+
+### Correccions
+
+* _JOIN_
+
+    SELECT AIRP.City, FL.colYear, FL.colMonth, AVG(FL.ArrDelay) FROM Flights as FL LEFT JOIN USAirports as AIRP  
+    ON FL.Origin = AIRP.IATA GROUP BY City, colYear, colMonth
+
+A repasar JOIN (molt més poderós LEFT que l'INNER) però a tenir en compte d'on venen les dades. Hem d'especificar molt 
+
+acuradament la taula i fila que folem fusionar (FL.Origin = AIRP.IATA)
 
 
 ### Documentació
