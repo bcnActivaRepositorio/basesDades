@@ -4,9 +4,9 @@
 
  * _Quantitat registres vol_
 
- ![Registres](https://imgur.com/ckc74Yx.png)
+ ![Registres](https://imgur.com/MFLfSdz.png)
 
-     SELECT * FROM flights;
+     SELECT COUNT(*) FROM flights;
 
  * _Retard promig de sortida i arribada segons l’aeroport origen_
 
